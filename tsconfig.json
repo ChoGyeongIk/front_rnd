@@ -1,0 +1,43 @@
+{
+    "compilerOptions": {
+        "declaration": false,
+      "target": "esnext",
+      "module": "esnext",
+      "strict": true,
+      "jsx": "preserve",
+      "moduleResolution": "node",
+      "experimentalDecorators": true,
+      "skipLibCheck": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "forceConsistentCasingInFileNames": true,
+      "useDefineForClassFields": true,
+      "sourceMap": true,
+      "baseUrl": ".",
+      "types": ["webpack-env","node"],
+      "paths": {
+        "@/*": ["src/*"]
+      },
+      "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
+      "resolveJsonModule": true,
+    },
+    "files": [],
+    "include": [
+      "src/**/*.ts",
+      "src/**/*.tsx",
+      "tests/**/*.ts",
+      "tests/**/*.tsx",
+      "node_modules/@types/vueperslides/vueperslides.d.ts"
+    ],
+    "exclude": ["node_modules"],
+    "noImplicitAny": false,
+    "references": [
+      {
+        "path": "./tsconfig.node.json"
+      },
+      {
+        "path": "./tsconfig.app.json"
+      }
+    ]
+  }
+  
